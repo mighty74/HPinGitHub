@@ -1,0 +1,73 @@
+.contentSkill {
+    height: 600px;
+    padding: 2rem 1rem 4rem 1rem;
+}
+
+.area {
+    display: flex;
+    width: 600px;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+}
+
+.tab_class {
+    width: calc(100%/4);
+    height: 50px;
+    background-color: darkgrey;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    float: left;
+    order: -1;
+    border-bottom: 2px solid darkgrey;
+}
+
+
+input[name="tab_name"] {
+    display: none;
+}
+
+input:checked + .tab_class {
+    background-color: #74c0ef;
+    color: aliceblue;
+    border-bottom: 2px solid #454C50;
+}
+
+.content_class {
+    display: none;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #a3d2ef;
+    border-radius: 0 0 5% 5%;
+}
+
+input:checked + .tab_class + .content_class {
+    display: flex;
+}
+
+.content_class img {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: #74c0ef;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 850px){
+    .area {
+        width:  250px;
+    }
+    .tab_class {
+        height: 40px;
+        background-color: darkgrey;
+        line-height: 40px;
+        font-size: 12px;
+    }
+    .content_class img {
+        width: 80px;
+        height: 80px;
+    }
+}

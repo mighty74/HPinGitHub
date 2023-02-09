@@ -1,8 +1,107 @@
 
 body {
-    font-family: "メイリオ";
-    color: rgb(44, 31, 15);
-    background-color: rgb(253, 248, 229);
+    min-width: 150px;
+    margin: 0;
+    font-family: serif;
+    color: #454C50;
+    background-color: #D7E6EF;
+}
+
+.top {
+    display: flex;
+    min-height: 50vw;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #454C50;
+    z-index: 2;
+    background-image: url('../img/top.jpg');
+    justify-content: center;
+    overflow: hidden;
+}
+
+.title {
+    display: block;
+    margin-top: 1rem;
+    border-bottom: 4px solid #454C50;
+}
+
+.main {
+    padding: 2rem 3rem;
+    height: 100%;
+}
+
+.contents {
+    display: flex;
+    padding: 2rem 1rem 4rem 1rem;
+    justify-content: center;
+}
+
+.aboutImg {
+    width: 600px;
+    height: 450px;
+    min-width: 600px;
+    margin: auto;
+}
+
+.aboutImg img {
+    border-radius: 20%;
+    /* filter: blur(1px); */
+}
+
+.aboutContents {
+    width: 500px;
+    height: 400px;
+    min-width: 500px;
+    margin: 50px auto 0 auto;
+    vertical-align: middle;
+}
+
+.contentItem {
+    display: flex;
+}
+
+
+.icon {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentWorks {
+    display: flex;
+    width: 1400px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work {
+    width: 200px;
+    height: 400px;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 1rem;
+    text-align: center;
+    border: 2px solid#74c0ef;
+    background-color: #a3d2ef;
+}
+
+.worksImg {
+    width: 180px;
+    height: 100px;
+    margin: 20px auto 0 auto;
+    border: 1px solid#454C50;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+
+h1 {
+    font-size: 2.25rem;
+    margin: 0 0 0 1rem;
 }
 
 a {
@@ -15,151 +114,72 @@ a:hover {
     text-underline-offset: 4px;
 }
 
-.background1 {
-    padding: 4rem 0 0 0;
-    display: flex;
-    justify-content: center;
+.text1 {
+    margin: auto;
+    font-size: 6vw;
+    color: rgb(255, 255, 255);
+    /* text-shadow:0 0 15px rgb(0, 38, 255); */
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    text-shadow:5px 5px 10px rgb(0, 38, 255);
 }
 
-.background2 {
-    display: block;
-    justify-content: center;
+.text2 {
+    font-size: 1rem;
+    margin: 0 0 2rem 1rem;
 }
 
-.top {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 0 auto;
-    background-color: rgba(0, 149, 255, 0.889);
-    border-radius: 50%;
+.text3 {
+    font-size: 1.5rem;
+    margin: 0 0 0 1rem;
 }
 
-.worksTop {
-    display: flex;
-    width: 250px;
-    height: 150px;
-    margin: 0 auto 0 auto;
-    border: 4px solid rgba(0, 149, 255, 0.889);
-    background-color: rgb(255, 255, 255);
-    border-radius: 1rem;
-    justify-content: center;
-    overflow: hidden;
+.text4 {
+    font-size: 1.5rem;
+    margin: 0 0 0 1rem;
 }
 
-.topArea {
-    width: 320px;
-    height: 650px;
-    min-width: 320px;
-    padding: 2.5rem 4rem 2.5rem 4rem;
-    margin: 1rem;
-    border-radius: 1rem;
-    background-color: rgb(168, 233, 255);
+.text5 {
+    font-size: 1.5rem;
+    margin: 0.5em 0 0 0;
+    -webkit-text-stroke: 1px #454C50;
 }
 
-.skillsArea {
-    width: 368px;
-    height: 650px;
-    min-width: 368px;
-    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
-    margin: 1rem;
+.text6 {
+    font-size: .8rem;
+    margin: 0 0 0.5em 0;
 }
 
-.worksArea {
-    width: 850px;
-    min-width: 368px;
-    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
-    margin: 1rem auto 1rem auto;
-}
-
-.editArea {
-    width: 850px;
-    min-width: 368px;
-    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
-    margin: 1rem auto 1rem auto;
-    border-top: 4px solid rgb(168, 233, 255);
-}
-
-.worksItem {
-    display: flex;
-}
-
-.worksItem .contents {
-    width: 300px;
-    height: 370px;
-    padding: 1.5rem 2rem 1.5rem 2rem;
-    margin: 1rem 5rem 2rem 0;
-    border-radius: 1rem;
-    background-color: rgb(168, 233, 255);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+.text7 {
+    -webkit-text-stroke: 1px #454C50;
+    font-size: 1.5rem;
+    text-align: left;
 }
 
 .worksItem .contents + .contents {
     margin: 1rem 0 1rem 2rem;
 }
 
-@media screen and (max-width: 950px){
-    .background1 {
+@media screen and (max-width: 1400px){
+    .contents {
         display: block;
     }
-    .topArea {
-        margin: 1rem auto 1rem auto;
+    .aboutImg {
+        width: 40vw;
+        height: 30vw;
+        min-width: 240px;
+        min-height: 180px;
     }
-    .skillsArea {
-        margin: 1rem auto 1rem auto;
+    .aboutContents {
+        width: 40vw;
+        min-width: 240px;
     }
-    .worksArea {
-        width: 368px;
-        margin: 1rem auto 1rem auto;
+    .area {
+        width:  70vw;
     }
-    .editArea {
-        width: 368px;
-        margin: 1rem auto 1rem auto;
+    .contentWorks {
+        width: 100%;
     }
-    .worksItem {
-        display: block;
+    .text4 {
+        font-size: 1rem;
     }
-    .worksItem .contents + .contents {
-        margin: 1rem 5rem 1rem 0;
-    }
-}
-
-
-.text1 {
-    font-size: 1.5rem;
-    text-align: left; 
-}
-
-.text2, li {
-    font-size: 1.25rem;
-}
-
-.icon {
-    display: flex;
-    width: 2rem;
-    height: 2rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.contentItem {
-    display: flex;
-}
-
-.contentItem .contents {
-    margin-right: 2rem;
-}
-
-
-
-h1, p, ul {
-    font-size: 2rem;
-    margin: 0;
-}
-
-ul {
-    margin-bottom: 1rem;
 }
